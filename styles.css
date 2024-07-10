@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a4ac86;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 100vh;
+
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-container {
+    border: 2px solid purple;
+    background-color: white;
+    padding: 50px;
+    width:80%;
+    /* box-shadow: 0 10px rgba(0, 0, 0, 0.1); */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.form-row > label{
+    margin-bottom: 2px;
+    color: rgb(184, 180, 180);
+    font-size: 0.95rem;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password']{
+    border: none;
+    border-bottom: 2px solid rgb(195, 192, 192);
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.form-template {
+    border: 1px solid blue;
+    padding: 5px;
+    width: 80%;
+}
+
+h3{
+    margin-bottom: 4rem;
+}
+
+.sign-up-header {
+    margin-bottom: 25px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 10px ;
+    padding: 10px 20px; 
+    width: 50%;
+    font-size: 1rem;
+    border: none;
+    background-color: #616952;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #7b836c;
+  }
+  
+button:active {
+    background-color: #33362c;
+  }
+
+#terms{
+    font-size: 0.8rem;
+}
+
+#terms > a {
+    color: #a4ac86;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .form-container {
+        width: 600px;
+    }
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row input[type='password']{
+        width: 250px;
+        height: initial;
+      }
+      .form-row > label{
+        width: 120px;
+      }
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.form-section, .image-section {
+    flex: 1;
+}
