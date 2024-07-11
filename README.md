@@ -18,3 +18,5 @@ The form includes the following input fields:
 
 ### Prerequisites
 A web browser to view the form.
+
+Photo credit: Nathan Dumlao
