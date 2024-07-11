@@ -15,30 +15,44 @@ body {
    justify-content: center;
 }
 
-.form-container {
-    border: 2px solid purple;
+.container {
+    border: 2px solid #fff;
     background-color: white;
-    /* padding: 50px; */
     width:60%;
     height: 600px;
     box-shadow: 0 15px 40px rgb(0,0,0,.5);
-    margin: auto 0;
 }
 
-/* .form-row {
+.image-section{
+    float: right;
+    background: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 45%;
+}
+
+
+.form-section {
+    float: left;
+    padding: 30px;
+    width: 53%;
+    height: 100% ;
+}
+
+
+ .form-row {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; */
-    /* justify-content: flex-start;
-    flex-wrap: wrap; */
-/* 
+    margin-bottom: 20px; 
+    justify-content: flex-start;
 }
 
-.form-row > label{
+ .form-row > label{
     margin-bottom: 2px;
     color: rgb(184, 180, 180);
     font-size: 0.95rem;
-}
+}  
 
 .form-row input[type='text'],
 .form-row input[type='email'],
@@ -50,14 +64,10 @@ body {
     font-size: 1rem;
 }
 
-.form-section {
-    border: 1px solid blue;
-    padding: 5px;
-    width: 80%;
-}
+
 
 h3{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .sign-up-header {
@@ -93,30 +103,29 @@ button:active {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 800px) {
-    .form-container {
-        width: 600px;
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+         flex-direction: column;
+        height: auto;
+    }
+    .form-section {
+        padding: 20px;
     }
     .form-row input[type='text'],
     .form-row input[type='email'],
     .form-row input[type='password']{
-        width: 250px;
+        width: 150px;
         height: initial;
       }
       .form-row > label{
-        width: 120px;
+        width: 100px;
       }
+
 }
 
 .form-row input[type='text']:invalid,
 .form-row input[type='email']:invalid {
   color: #D55C5F;
   box-shadow: none; /* Remove default red glow in Firefox */
-/* }
-
-.image-section{
-    background: url(./background.jpg) no-repeat center center / cover;
-    height: 100%;
-    width: 40%;
-    border: 2px solid orange;
-} */ 
+}
